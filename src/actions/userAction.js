@@ -48,6 +48,7 @@ export const login = (email, password) => async (dispatch) => {
     const { data } = await axios.post(
       `https://animetion.onrender.com/api/v1/login`,
       { email, password },
+      {withCredentials: true},
       config
     );
 
