@@ -67,6 +67,7 @@ export const userReducer = (state = { user: {} }, action) => {
         user: action.payload.user,
       }; 
     case LOGOUT_SUCCESS:
+      localStorage.removeItem('token');
       return {
         loading: false,
         user: null,
