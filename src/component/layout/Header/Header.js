@@ -65,13 +65,13 @@ function Header() {
 		<header>
 			<a href="/"><img src={logo} alt="" /></a>
 			<nav ref={navRef}>
-				<NavLink to ="/">Home</NavLink>
-				<NavLink to ="/products">Products</NavLink>
-				<NavLink to ="/contact">Contact</NavLink>
-				<NavLink to ="/about">About</NavLink>
-				<NavLink to ="/search"><Search /></NavLink>
-				<NavLink to ="/cart"><ShoppingCartIcon /></NavLink>
-				<NavLink to ="/login"><AccountBoxRounded /></NavLink>
+				<NavLink to ="/" onClick={showNavbar}>Home</NavLink>
+				<NavLink to ="/products" onClick={showNavbar}>Products</NavLink>
+				<NavLink to ="/contact" onClick={showNavbar}>Contact</NavLink>
+				<NavLink to ="/about" onClick={showNavbar}>About</NavLink>
+				<NavLink to ="/search" onClick={showNavbar}><Search /></NavLink>
+				<NavLink to ="/cart" onClick={showNavbar}><ShoppingCartIcon /></NavLink>
+				<NavLink to ="/login" onClick={showNavbar}><AccountBoxRounded /></NavLink>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
