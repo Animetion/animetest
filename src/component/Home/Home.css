@@ -17,14 +17,19 @@
     height: auto;
     max-width: 100%;
   }
-}
 
-@media only screen and (max-width: 400px){
   .banner > h1 {
     margin: 5vmax;
     font: 600 2vmax "Roboto";
  }
 }
+
+/* @media only screen and (max-width: 400px){
+  .banner > h1 {
+    margin: 5vmax;
+    font: 600 2vmax "Roboto";
+ }
+} */
 
 .banner > h1 {
   margin: 5vmax;
