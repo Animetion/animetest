@@ -1,6 +1,7 @@
 // import React from 'react';
 // import { ReactNavbar } from "overlay-navbar";
 import logo from "../../../images/logo.png";
+import { NavLink } from "react-router-dom";
 
 // const options = {
 //   burgerColor: "#eb4034",
@@ -46,6 +47,9 @@ import logo from "../../../images/logo.png";
 
 import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import AccountBoxRounded from "@material-ui/icons/AccountBoxRounded";
+import Search from "@material-ui/icons/Search";
+import ShoppingCartIcon from '@material-ui/icons/ShoppingCart';
 import "./Header.css";
 
 function Header() {
@@ -59,12 +63,15 @@ function Header() {
 
 	return (
 		<header>
-			<a href=""><img src={logo} alt="" /></a>
+			<a href="/"><img src={logo} alt="" /></a>
 			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">My work</a>
-				<a href="/#">Blog</a>
-				<a href="/#">About me</a>
+				<NavLink to ="/">Home</NavLink>
+				<NavLink to ="/products">Products</NavLink>
+				<NavLink to ="/contact">Contact</NavLink>
+				<NavLink to ="/about">About</NavLink>
+				<NavLink to ="/search"><Search /></NavLink>
+				<NavLink to ="/cart"><ShoppingCartIcon /></NavLink>
+				<NavLink to ="/login"><AccountBoxRounded /></NavLink>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

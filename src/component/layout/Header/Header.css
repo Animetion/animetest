@@ -10,6 +10,13 @@
   border-radius: 100%;
 }
 
+@media only screen and (max-width: 600px){
+	.speedDial {
+		position: fixed;
+		right: 3vmax;
+		top: 14vmax;
+	  }	
+}
 
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
