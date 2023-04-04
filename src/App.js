@@ -1,6 +1,7 @@
 import "./App.css";
 import { useEffect, useState } from "react";
 import Header from "./component/layout/Header/Header.js";
+import Navbar from "./component/layout/Navbar/Navbar.js";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import WebFont from "webfontloader";
 import React from "react";
@@ -74,8 +75,8 @@ function App() {
 
   return (
     <Router>
-      <Header />
-
+      {/* <Header /> */}
+      <Navbar/>
       {isAuthenticated && <UserOptions user={user} />}
 
       {stripeApiKey && (
