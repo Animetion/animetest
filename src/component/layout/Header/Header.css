@@ -10,6 +10,7 @@
   border-radius: 100%;
 }
 
+
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap");
 
 * {
@@ -32,21 +33,23 @@ header {
 	justify-content: space-between;
 	height: 80px;
 	padding: 0 2rem;
-	background-color: var(--mainColor);
+	background-color: white;
 	color: var(--textColor);
 }
 
 header a{
-	;
+	
 }
 
 header a img{
-	width: 100px;
+	width: 200px;
+	position: relative;
+	top : 9px
 }
 
 nav a {
 	margin: 0 1rem;
-	color: var(--textColor);
+	color: black;
 	text-decoration: none;
 }
 
@@ -60,7 +63,7 @@ header .nav-btn {
 	background: transparent;
 	border: none;
 	outline: none;
-	color: var(--textColor);
+	color: black;
 	visibility: hidden;
 	opacity: 0;
 	font-size: 1.8rem;
@@ -89,7 +92,7 @@ nav {
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: var(--mainColor);
+		background-color: white;
 		transition: 1s;
 	}
 

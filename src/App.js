@@ -75,8 +75,8 @@ function App() {
 
   return (
     <Router>
-      {/* <Header /> */}
-      <Navbar/>
+      <Header /> 
+      {/* <Navbar/> */}
       {isAuthenticated && <UserOptions user={user} />}
 
       {stripeApiKey && (
